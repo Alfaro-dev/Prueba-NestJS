@@ -15,6 +15,8 @@ const config = {
     migrations: ["src/database/migrations/*{.ts,.js}"],
     autoLoadEntities: true,
     synchronize: false,
+    retryDelay: 3000,
+    retryAttempts: 10,
 }
 
 export default registerAs('typeorm', () => config)

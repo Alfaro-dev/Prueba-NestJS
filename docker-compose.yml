@@ -23,4 +23,4 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgres://admmin:admin@db/db_api_rest
+      DATABASE_URL: postgres://admmin:admin@db:5432/db_api_rest
